@@ -1,0 +1,34 @@
+/* Selectod de Nombre de Etiqueta */
+
+span {
+    color: tomato;
+}
+
+/* Selector multiple separado por comas (,) */
+/*  La coma asocia a un Y */
+
+li, p {
+    /* Se lee los <li> Y los <p> */
+    color: slateblue;
+}
+
+/* Selector de hijos de un elemento a cualquier nivel */
+/*  El espacio asocia a un nivel */
+aside a {
+    color: red;
+}
+
+/* Selector de hijos en primer nivel */
+article > h4 {
+    color: green;
+}
+
+/* Selector de ID */
+#titulo-dmovil{
+    color: chocolate;
+}
+
+/* Selector Clase */
+.lista-semanas {
+    color: grey;
+}

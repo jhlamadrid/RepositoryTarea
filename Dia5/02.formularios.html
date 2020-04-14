@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <h1>Formularios</h1>
+  </header>
+  <main>
+    <section>
+
+      <form action="./hrtgrtgh.html" method="GET">
+        <p>
+          <label for="nombre">Nombre:</label>
+          <input type="text" placeholder="Nombre" id="nombre" name="nombre" />
+        </p>
+        <p>
+          <label for="apellido">Apellidos:</label>
+          <input type="text" placeholder="apellido" id="apellido" name="apellido" />
+        </p>
+        <p>
+          <label for="fechaNac">Fecha de Nac:</label>
+          <input type="date" id="fechaNac" name="fechaNac" />
+        </p>
+        <p>
+          <label for="sueldo">Sueldo:</label>
+          <input type="number" id="sueldo" name="sueldo" step="5" />
+        </p>
+        <p>
+          <label for="pass">Contraseña</label>
+          <input type="password" id="pass" name="pass" />
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+        </p>
+        <p>
+          <label for="miColor">Color Favorito</label>
+          <input type="color" id="miColor" name="miColor">
+        </p>
+        <p>
+          <label for="horaReg">Hora de Registro</label>
+          <input type="time" id="horaReg" name="horaReg">
+        </p>
+        <p>
+          <label>Elija Turno</label>
+        </p>
+        <p>
+          <label for="">Mañana</label>
+          <input type="radio" name="turno" id="mañana" value="m" checked>
+          |
+          <label for="">Tarde</label>
+          <input type="radio" name="turno" id="tarde" value="t">
+          |
+          <label for="">Noche</label>
+          <input type="radio" name="turno" id="noche" value="n">
+        </p>
+        <p>
+          <label>Seleccione Materias</label>
+          <p>
+            <label for="uxui">UX/UI</label>
+            <input type="checkbox" id="uxui" name="uxui" value="uxui">
+            |
+            <label for="git">Git</label>
+            <input type="checkbox" id="git" name="git" value="git">
+            |
+            <label for="devops">DevOps</label>
+            <input type="checkbox" id="devops" name="devops" value="devops">
+          </p>
+          <p>s
+            <label for="mensaje">Escriba un mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"
+              placeholder="Escriba un texto al admin"></textarea>
+          </p>
+          <p>
+            <label for="pais">Seleccone un Pais</label>
+            <select name="pais" id="pais">
+              <option value="">--Seleccione--</option>
+              <option value="pe" selected>Peru</option>
+              <option value="ho">Honduras</option>
+              <option value="me">Mexico</option>
+            </select>
+          </p>
+        </p>
+        <button type="submit">Registrar</button>
+        <button type="button">Regresar al menu</button>
+        <button type="reset">Limpiar Campos</button>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
