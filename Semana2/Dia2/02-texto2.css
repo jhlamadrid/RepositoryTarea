@@ -1,0 +1,38 @@
+/* Inyectar un tipo de letra descargada - Referenciamos el archivo */
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('./Quicksand-Regular.ttf');
+}
+
+h1 {
+    /* OJO: alineamiento de textos y no de ELEMENTOS */
+    text-align: center;
+    background-color: aqua;
+}
+
+p:not(.textol-footer):not(.cksand) {
+    /* La primero linea de parrafo genera una sangria */
+    text-indent: 60px;
+    /* Espacio entre letra y letra de un parrafo */
+    letter-spacing: 5px;
+    /* Espacio entre palabra y palabra */
+    word-spacing: 15px;
+    /* Espacio entre linea y linea */
+    line-height: 14px;
+}
+
+small {
+    /* underline | overline | none | line-through */
+    text-decoration: line-through;
+}
+
+a {
+    /* Quitamos diseño al enlace quedando como un enlace como texto */
+    text-decoration: none;
+    color: black;
+}
+
+.cksand {
+    font-family: Quicksand;
+}

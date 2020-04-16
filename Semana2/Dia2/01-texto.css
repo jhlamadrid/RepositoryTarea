@@ -1,0 +1,30 @@
+/* Familia de fuente */
+
+h1 {
+    /* Tipo de Letra */
+    font-family: cursive, Verdana, sans-serif;
+}
+
+p {
+    /* tamaño de letra */
+    /* El tamaño por defecto en las paginas es de 16px */
+    font-size: 20px;
+    font-family: Tahoma, sans-serif;
+}
+
+h4 {
+    /* proporcion de negrita del texgto */
+    font-weight: bold;
+}
+
+small {
+    /* estilo de fuente */
+    /* normal | oblique | italic */
+    font-style: italic;
+}
+
+.textol-footer {
+    /* Propiedad de texto estilo SHORTHAND */
+    /* font-weigth, font-size, font-family */
+    font: italic 100 10px Arial;
+}

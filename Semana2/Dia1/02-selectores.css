@@ -5,6 +5,7 @@ span {
 }
 
 /* Selector multiple separado por comas (,) */
+
 /*  La coma asocia a un Y */
 
 li, p {
@@ -13,22 +14,40 @@ li, p {
 }
 
 /* Selector de hijos de un elemento a cualquier nivel */
+
 /*  El espacio asocia a un nivel */
+
 aside a {
     color: red;
 }
 
 /* Selector de hijos en primer nivel */
-article > h4 {
+
+article>h4 {
     color: green;
 }
 
 /* Selector de ID */
-#titulo-dmovil{
+
+#titulo-dmovil {
     color: chocolate;
 }
 
 /* Selector Clase */
+
 .lista-semanas {
     color: grey;
+}
+
+/* Selector que incluye los atributos de un elemento */
+
+/* todos los inputs que en su propiedad sean tipo texto */
+/* El espacio significa hijos del padre */
+
+input[type="text"] {
+    border: 1px solid red;
+}
+
+input[type="number"] {
+    border: 1px solid blue;
 }

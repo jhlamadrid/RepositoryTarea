@@ -1,0 +1,18 @@
+/* Notacion hexagecimal de colores */
+
+h1 {
+    color: #9984FF;
+    text-align: center;
+    color: seagreen;
+}
+
+main p {
+    color: rgb(200, 180, 100);
+}
+h3 {
+    color: rgb(41, 176, 249);
+}
+
+.rojo-transparente{
+    color: rgba(255red, 42, 85, 1);
+}

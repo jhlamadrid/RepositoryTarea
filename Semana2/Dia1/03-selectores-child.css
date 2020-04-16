@@ -1,0 +1,49 @@
+/* Propiedad nth-child */
+
+/* Agarra grupo de hermanos y selecciona uno del indice que le demos */
+
+/* De cada grupo de hermanos al mismo nivel de li's aplicar el color */
+
+li:nth-child(3) {
+    color: chocolate;
+}
+
+/* Selecionando al primer elemento de un grupo de hermanos al mismo nivel */
+
+p:first-child {
+    color: crimson;
+}
+
+p:last-child {
+    color: blue;
+}
+
+/* Seleccionar todos los elementos impares de un grupo de hermanos al mismo nivel */
+
+/* odd >>  Impares*/
+
+tbody tr:nth-child(odd) {
+    background-color: tan;
+}
+
+/* even >>  Impares*/
+
+tbody tr:nth-child(even) {
+    background-color: silver;
+}
+
+#tr-encabezado {
+    background-color: silver;
+}
+
+/* :not() => interpreta como un "excepto" */
+
+/* Todos los elementos dentro de un ul a cualquier nivel excepto los que tengas la clase "seleccionado" */
+
+ul :not(.seleccionado) {
+    color: red;
+}
+
+h4:not(.letra-grande) {
+    color: violet;
+}
