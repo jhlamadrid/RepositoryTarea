@@ -1,0 +1,25 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: teal;
+}
+/*  inline-block: acgtiva el width y el height */
+/* inline: bloque las propiedades width y height */
+aside{
+    height: 500px;
+    width: 30%;
+    background-color: tan;
+}
+aside, section{
+    display: inline-block;
+    /* width: 30%; */
+}
+section{
+    height: 500px;
+    background-color: yellowgreen;
+    width: 30%;
+}

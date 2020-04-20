@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: teal;
+    color: whitesmoke;
+}
+
+#caja-1{
+    width: 140px;
+    height: 50px;
+    float: left;
+    /* margin: 5px; */
+    background-color: tomato;
+}
+#caja-2{
+    width: 140px;
+    height: 50px;
+    float: left;
+    /* margin: 5px; */
+    background-color: tomato;
+}
+#caja-3{
+    width: 140px;
+    height: 50px;
+    float: left;
+    background-color: tomato;
+}
+#caja-4{
+    width: 140px;
+    height: 50px;
+    float: left;
+    background-color: tomato;
+}
+#contenedor {
+    background-color: tan;
+    width: 600px;
+}
+#contenedor > div{
+    border: 1px solid red;
+}
+
+.fix{
+    clear: both;
+}
+#navegacion{
+    background-color: crimson;
+    color: white;
+}
+.navegacion-wraper {
+    margin: 0 auto;
+    background-color: green;
+    width: 450px;
+}
+/* .navegacion-wraper>div:not(.fix) */
+.opcion-1, .opcion-2, .opcion-3{
+    background-color: indigo;
+    width: 150px;
+    float: left;
+    text-align: center;
+    border: 1px solid yellow;
+}

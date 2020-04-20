@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#div-1 {
+    width: 150px;
+    height: 150px;
+    background-color: tomato;
+    /* animation: nombre | duracion | funcion_de_tiempo | delay | nro_veces_a_repetir | direccion | fill-mode */
+    animation: cambiardecolores 2s ease 0s infinite normal none;
+}
+
+#div-2 {
+    margin: 100px auto 0px auto;
+    width: 150px;
+    height: 150px;
+    background-image: url('./cargador.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: girar 1s linear 0s infinite normal none;
+}
+
+/* Pasar el maus encima de la imagen */
+#div-2:hover {
+    animation: girar 1s linear 0s infinite normal none;
+}
+
+
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg) scale(1.5);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cambiardecolores {
+    /* Estado inicial  */
+    0% {
+        background-color: green;
+    }
+    33% {
+        background-color: rgb(205, 50, 159);
+        transform: scale(2);
+    }
+    66% {
+        background-color: black;
+        transform: scale(1.5);
+    }
+    100% {
+        background-color: indigo;
+    }
+}

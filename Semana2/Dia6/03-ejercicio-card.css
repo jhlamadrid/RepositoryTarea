@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    /* vh => viewport height : 100% en altura de la parte visual o 
+    resolucion de la pantalla del dispositivo*/
+    height: 100vh;
+    background-color: #eee;
+}
+
+.contenedor {
+    width: 900px;
+    background-color: white;
+    height: 500px;
+    /* margin: 0 auto; */
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imagen-wrapper {
+    height: 250px;
+    border: 1px solid red;
+    position: relative;
+}
+
+.circulo {
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.texto-wrapper {
+    text-align: center;
+}
+
+.texto-wrapper>p {
+    margin-top: 80px;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #444444;
+}
+
+.texto-wrapper>button {
+    margin-top: 50px;
+    border: none;
+    background-color: green;
+    color: white;
+    padding: 15px;
+    border-radius: 3px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+

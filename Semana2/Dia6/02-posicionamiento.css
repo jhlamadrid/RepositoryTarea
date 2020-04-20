@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 2000px;
+}
+
+#section-1 {
+    border: 1px solid red;
+    height: 500px;
+    margin: 40px;
+    position: relative;
+}
+/* 
+.div-1, .div-2 {
+    background-color: indigo;
+    width: 150px;
+    height: 150px;
+    border: 1px solid yellow;
+} */
+
+.div-2 {
+    background-color: brown;
+    width: 150px;
+    height: 150px;
+}
+
+.div-1 {
+    background-color: indigo;
+    width: 150px;
+    height: 150px;
+    /* relative => el elemento conserva su posicion original,
+    sin embargo ya esta habilitado para moverse respecto de su 
+    padre 
+    - Se pueden usar las referencias top y left 
+    - Los hermanos del elemento Relative respetan su posicion */
+    position: relative;
+    top: 20px;
+    opacity: 0.7;
+    left: 50%;
+    /* En traslate, cuando toma un porcentaje, lo hace respecto del ancho del mismo elemento, NO DEL PADRE  */
+    transform: translate(-50%, 0);
+}
+
+#section-2 {
+    border: 1px solid red;
+    height: 300px;
+    margin: 40px;
+    position: relative;
+}
+
+.div-3 {
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    /* opacity: 0.7; */
+    /* absolute => Se posiciona rspecto del padre que tenga posicion relativa 
+    -Si el padre no tiene posicion relativa, el elemento tomara como referencia el proximo padre (abuelo o bisabuelo, etc) que tenga dicha posicion
+    -Se pueden usar las referencias bottom, top, left y right
+    -Los hermanos del elemento absolute, ya no consideran su posicion como en el caso del posicionamiento relative */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.div-4 {
+    width: 100px;
+    height: 100px;
+    background-color: darkblue;
+    /* opacity: 0.7; */
+}
+
+.div-fixed{
+    width: 150px;
+    height: 150px;
+    background-color: darkgoldenrod;
+    /* Fixed => Su unica referencia, es la ventana del navegador
+    - Para ello, el elemento debe tener asignado dos valores minimos de referencia, ejemp: top y left o right y bottom */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* top: 0;
+    left: 0; */
+    /* bottom: 0;
+    right: 0; */
+}
