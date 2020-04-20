@@ -54,16 +54,21 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .iconos{
-    /* border: 1px solid red; */
-    
     display: block;
     margin-top: 20px;
-  
+}
+.iconos>div>a>img:hover{
+    transition: all 0.5s ease 0s;
+    border-radius: 5px;
+    transform: scale(1.5, 1.5);
+    /* box-shadow: rgb(3, 92, 92) 0 0 1px 1px; */
+    /* filter: blur(3px); */
 }
 .iconos>div:not(.fix){
     float: left;
     width: 3%;
     margin-left: 60px;
+    
 }
 .fix{
     clear: both;
