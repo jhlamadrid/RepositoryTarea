@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  
+  .header{
+      display: flex;
+      justify-content: center;
+  }
+
+
+  .heder__logo{
+      width: 200px;
+      display: flex;
+      justify-content: space-around;
+      border: 1px solid tomato;
+      align-items: center;
+  }
+
+
+.header__navegacion {
+    border: 1px solid blue;
+    width: 700px;
+    display: flex;
+}
+.header__navegacion-lista{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+/* .header__navegacion-item{
+    border: 1px solid teal;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
