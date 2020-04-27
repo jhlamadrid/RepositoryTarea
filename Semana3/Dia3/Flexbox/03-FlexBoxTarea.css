@@ -5,7 +5,7 @@
 }
 
 .transp{
-    background-color: white;
+    background-color: rgb(241, 240, 240);
     border-radius: 5px;
     height: 40px;
     border-radius: 50%;
@@ -42,13 +42,6 @@
     width: 50%;
 }
 
-.header__opIcons {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    width: 50%;
-}
-
 .header__navegacion-lista {
     display: flex;
     list-style: none;
@@ -60,6 +53,12 @@
     font-size: 14px;
 }
 
+.header__opIcons {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 50%;
+}
 .header__opIcons-lista {
     display: flex;
     list-style: none;
